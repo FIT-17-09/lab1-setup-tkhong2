@@ -1,0 +1,135 @@
+== Tool checks ==
+[PASS] git installed
+[PASS] docker installed
+[PASS] node installed
+[PASS] python installed
+\n== Docker checks ==
+Docker version 28.2.2, build 28.2.2-0ubuntu1~24.04.1
+[PASS] docker CLI
+docker: unknown command: docker compose
+
+Run 'docker --help' for more information
+[FAIL] docker compose v2
+Client:
+ Version:    28.2.2
+ Context:    default
+ Debug Mode: false
+ Plugins:
+WARNING: Plugin "/usr/local/lib/docker/cli-plugins/docker-ai" is not valid: failed to fetch metadata: fork/exec /usr/local/lib/docker/cli-plugins/docker-ai: no such file or directory
+WARNING: Plugin "/usr/local/lib/docker/cli-plugins/docker-buildx" is not valid: failed to fetch metadata: fork/exec /usr/local/lib/docker/cli-plugins/docker-buildx: no such file or directory
+WARNING: Plugin "/usr/local/lib/docker/cli-plugins/docker-compose" is not valid: failed to fetch metadata: fork/exec /usr/local/lib/docker/cli-plugins/docker-compose: no such file or directory
+WARNING: Plugin "/usr/local/lib/docker/cli-plugins/docker-debug" is not valid: failed to fetch metadata: fork/exec /usr/local/lib/docker/cli-plugins/docker-debug: no such file or directory
+WARNING: Plugin "/usr/local/lib/docker/cli-plugins/docker-desktop" is not valid: failed to fetch metadata: fork/exec /usr/local/lib/docker/cli-plugins/docker-desktop: no such file or directory
+WARNING: Plugin "/usr/local/lib/docker/cli-plugins/docker-extension" is not valid: failed to fetch metadata: fork/exec /usr/local/lib/docker/cli-plugins/docker-extension: no such file or directory
+WARNING: Plugin "/usr/local/lib/docker/cli-plugins/docker-init" is not valid: failed to fetch metadata: fork/exec /usr/local/lib/docker/cli-plugins/docker-init: no such file or directory
+WARNING: Plugin "/usr/local/lib/docker/cli-plugins/docker-mcp" is not valid: failed to fetch metadata: fork/exec /usr/local/lib/docker/cli-plugins/docker-mcp: no such file or directory
+WARNING: Plugin "/usr/local/lib/docker/cli-plugins/docker-model" is not valid: failed to fetch metadata: fork/exec /usr/local/lib/docker/cli-plugins/docker-model: no such file or directory
+WARNING: Plugin "/usr/local/lib/docker/cli-plugins/docker-offload" is not valid: failed to fetch metadata: fork/exec /usr/local/lib/docker/cli-plugins/docker-offload: no such file or directory
+WARNING: Plugin "/usr/local/lib/docker/cli-plugins/docker-pass" is not valid: failed to fetch metadata: fork/exec /usr/local/lib/docker/cli-plugins/docker-pass: no such file or directory
+WARNING: Plugin "/usr/local/lib/docker/cli-plugins/docker-sandbox" is not valid: failed to fetch metadata: fork/exec /usr/local/lib/docker/cli-plugins/docker-sandbox: no such file or directory
+WARNING: Plugin "/usr/local/lib/docker/cli-plugins/docker-sbom" is not valid: failed to fetch metadata: fork/exec /usr/local/lib/docker/cli-plugins/docker-sbom: no such file or directory
+WARNING: Plugin "/usr/local/lib/docker/cli-plugins/docker-scout" is not valid: failed to fetch metadata: fork/exec /usr/local/lib/docker/cli-plugins/docker-scout: no such file or directory
+
+Server:
+ Containers: 2
+  Running: 0
+  Paused: 0
+  Stopped: 2
+ Images: 30
+ Server Version: 28.2.2
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Using metacopy: false
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: systemd
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: 
+ runc version: 
+ init version: 
+ Security Options:
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 6.6.87.2-microsoft-standard-WSL2
+ Operating System: Ubuntu 24.04.3 LTS
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 8
+ Total Memory: 3.762GiB
+ Name: KhacHong
+ ID: 91048a9d-9188-46c4-a904-63fe7fa96f72
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ Experimental: false
+ Insecure Registries:
+  ::1/128
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+[PASS] docker daemon ready
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+[PASS] hello-world container
+\n== Image checks ==
+[PASS] image registry:2
+[PASS] image python:3.11-slim
+[PASS] image node:20-alpine
+[PASS] image postgres:15-alpine
+[PASS] image rabbitmq:3-management
+[PASS] image eclipse-mosquitto:2
+[PASS] image nginx:alpine
+[PASS] image traefik:v3.1
+[PASS] image prom/prometheus:v2.54.1
+[PASS] image grafana/grafana:11.2.0
+[PASS] image redis:7-alpine
+[PASS] image swaggerapi/swagger-ui:v5.17.14
+[PASS] image hello-world:latest
+[PASS] image ultralytics/ultralytics:latest-cpu
+\n== Ultralytics check ==
+Creating new Ultralytics Settings v0.0.6 file ✅ 
+View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+8.4.46
+[PASS] ultralytics yolo version
+\n== Compose mini-stack check ==
+unknown shorthand flag: 'f' in -f
+
+Usage:  docker [OPTIONS] COMMAND [ARG...]
+
+Run 'docker --help' for more information
+[WARN] compose mini-stack could not start; maybe ports 8081/5000 are in use
+\nALL CHECKS FINISHED. Read evidence/buoi-01/smoke-test-result.txt for details.

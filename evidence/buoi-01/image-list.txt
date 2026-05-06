@@ -1,0 +1,22 @@
+REPOSITORY:TAG                       IMAGE ID       SIZE
+ultralytics/ultralytics:latest-cpu   c25d1c9b4e7d   2.02GB
+redis:7-alpine                       0f16dc869bf2   39.1MB
+python:3.11-slim                     1eee6fcc4d86   124MB
+postgres:15-alpine                   c1dd58d6cec8   274MB
+nginx:alpine                         812d47f806db   62.2MB
+node:20-alpine                       11cedc39e663   136MB
+eclipse-mosquitto:2                  315e99cbcdc0   22.2MB
+repo_app:latest                      a7a6cd7f579a   1.53GB
+postgres:15                          aca5bef375a5   445MB
+hello-world:latest                   e2ac70e7319a   10.1kB
+redis:<none>                         aa189b5a1954   41.4MB
+mongo:6                              d57fdb7f35f1   773MB
+rabbitmq:3-management                de912cbbf07f   252MB
+minio/minio:latest                   69b2ec208575   175MB
+traefik:v3.1                         075808f3fdf7   178MB
+python:3.8-slim                      b5f62925bd0f   125MB
+grafana/grafana:11.2.0               de903bc9ce7c   478MB
+prom/prometheus:v2.54.1              4022a502929b   275MB
+swaggerapi/swagger-ui:v5.17.14       383f9b1c52b3   116MB
+registry:2                           26b2eb03618e   25.4MB
+postgres:10-alpine                   02c83b13f6ea   79.1MB
